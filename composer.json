@@ -1,0 +1,21 @@
+{
+    "name": "grilar/installer",
+    "description": "Installer package for Grilar CMS application",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Installer\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Installer\\Providers\\InstallerServiceProvider"
+            ]
+        }
+    }
+}
